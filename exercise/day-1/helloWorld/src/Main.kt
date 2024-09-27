@@ -1,14 +1,13 @@
 fun main() {
-    val spends : Array<Double> = arrayOf(300.0, 150.0 , 50.0, 40.0)
+    val spends = arrayOf(100, 150 ,250)
 
 
     for (x in spends) {
         val result = when {
-            x > 200.0 -> x * 0.7
-            x in 100.1..200.0 -> x*0.8
-            x in 50.0..100.0 -> x*0.9
-            x in 0.0..49.9 -> x
-            else -> "invalid amount"
+            x > 200 -> (100 + 150 + (x-200)*2)
+            x in 101..200 -> ((x-100)*1.5 + 100)
+            x in 0..100 -> x*1
+            else -> "invalid units"
         }
         print(x)
         print(" = ")
