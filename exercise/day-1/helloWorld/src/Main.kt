@@ -4,9 +4,9 @@ fun main() {
 
     for (x in spends) {
         val result = when {
-            x > 200 -> (100 + 150 + (x-200)*2)
-            x in 101..200 -> ((x-100)*1.5 + 100)
-            x in 0..100 -> x*1
+            x > 200 -> 250 + (x-200)*2
+            x in 101..200 -> (x-100)*1.5 + 100
+            x in 0..100 -> x
             else -> "invalid units"
         }
         print(x)
