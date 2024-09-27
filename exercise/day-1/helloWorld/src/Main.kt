@@ -1,15 +1,14 @@
 fun main() {
-    val gaji = 1000000
-    val tahun = arrayOf(1, 3, 6)
+    val spends : Array<Double> = arrayOf(300.0, 150.0 , 50.0, 40.0)
 
-    println(gaji)
 
-    for (x in tahun) {
+    for (x in spends) {
         val result = when {
-            x > 5 -> gaji * 0.2
-            x in 2..5 -> gaji * 0.1
-            x in 0..1 -> 0
-            else -> "Invalid year"
+            x > 200.0 -> x * 0.7
+            x in 100.1..200.0 -> x*0.8
+            x in 50.0..100.0 -> x*0.9
+            x in 0.0..49.9 -> x
+            else -> "invalid amount"
         }
         print(x)
         print(" = ")
