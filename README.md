@@ -1,4 +1,4 @@
-ini jona
+ini jonathan
 
 git remote add upstream https://github.com/khalidalhabibie/anansi
 
