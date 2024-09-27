@@ -1,16 +1,22 @@
 fun main() {
-    val spends = arrayOf(100, 150 ,250)
+    val guess = arrayOf(5, 3, 7, 0)
+    val correct = 7
+    var i = 0
 
-
-    for (x in spends) {
-        val result = when {
-            x > 200 -> 250 + (x-200)*2
-            x in 101..200 -> (x-100)*1.5 + 100
-            x in 0..100 -> x
-            else -> "invalid units"
+    while (i < guess.size) {
+        val g = guess[i]
+        if (g == correct) {
+            print(g)
+            println(" correct")
+            break
+        } else if (g == 0) {
+            println("quit guessing")
+            break
+        } else {
+            print(g)
+            println(" pass")
         }
-        print(x)
-        print(" = ")
-        println(result)
+        i++
     }
 }
+
