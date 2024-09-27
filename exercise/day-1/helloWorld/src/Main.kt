@@ -1,25 +1,18 @@
 fun main() {
-    val nilai = arrayOf(90,89,79,69,59,-1,101)
+    val gaji = 1000000
+    val tahun = arrayOf(1, 3, 6)
 
-    for(x in nilai) {
-        if (x in 90..100) {
-            print(x)
-            println(" = A")
-        } else if (x in 80..89) {
-            print(x)
-            println(" = B")
-        } else if (x in 70..79) {
-            print(x)
-            println(" = C")
-        } else if (x in 60..69) {
-            print(x)
-            println(" = D")
-        } else if (x in 0.. 60) {
-            print(x)
-            println(" = F")
+    println(gaji)
+
+    for (x in tahun) {
+        val result = when {
+            x > 5 -> gaji * 0.2
+            x in 2..5 -> gaji * 0.1
+            x in 0..1 -> 0
+            else -> "Invalid year"
         }
-        else{
-            println("out of range")
-        }
+        print(x)
+        print(" = ")
+        println(result)
     }
 }
