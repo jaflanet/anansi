@@ -1,0 +1,111 @@
+1.C 
+2.C 
+3.B
+4.B 
+5.D 
+
+1.False
+2.True
+3.True
+4.True
+5.True
+
+1. kotlin has more concise syntax than Java
+
+2. val for variable that constant (cannot change),
+var for dynamic variable
+
+3. a Kotlin feature designed to 
+significantly reduce the risk of null reference
+
+4.when is like switch to loop and conditional logic
+
+5.Dependency injection is a design pattern and technique 
+used in OOP that allows a class to receive its
+dependencies from an external source rather than 
+creating them internally. 
+dependency injection is crucial for building 
+scalable, maintainable, and testable applications.
+
+6.Kotlin provides a more concise and expressive way of declaring
+functions compared to Java by supporting features 
+like default parameters and named arguments 
+directly within its syntax
+
+7.Higher-order functions and lambdas are powerful features 
+in Kotlin that enhance code expressiveness and reusability.
+developers can write cleaner and more maintainable 
+code while taking advantage of functional programming paradigms.
+
+8.MVVM stands for model-view-ViewModel, the key component is 
+viem model
+
+9.model content the logic, view content the ui, view model 
+handle the presentation logic from the modle and present it to
+the view
+
+10.providing observable data holders that are lifecycle-aware, 
+facilitating automatic updates between the ViewModel 
+and UI components while maintaining separation of 
+concerns and enhancing overall application stability
+
+11.Kotlin’s combination of simplified syntax, 
+powerful type inference, support for functional 
+programming, built-in null safety features, 
+extension functions, data classes, 
+and concise control structures contribute 
+significantly to its reputation as a 
+concise and expressive language.
+
+12.their syntax and capabilities regarding iteration 
+over ranges and collections, support for 
+steps and downward iterations, functional 
+approaches via methods like forEach, 
+and type inference features that simplify coding practices.
+
+13.allows the compiler to automatically deduce the types of 
+variables, expressions, function return types, 
+and other constructs without requiring 
+explicit type declarations.
+
+14.encapsulation is prevent the data to be 
+directly accessed. in kotlin is implemented 
+using access modifiers to control 
+the visibility of class members.
+
+15.data binding serves as an essential mechanism within 
+MVVM that facilitates synchronization between user 
+interfaces and underlying data models 
+while promoting separation of concerns, 
+reducing boilerplate code, improving testability, 
+enabling dynamic updates, supporting two-way 
+communication between views and view models
+
+16.repositories centralizing data access, 
+promoting separation of concerns, 
+enhancing testability, 
+providing flexibility and scalability, 
+ensuring consistent data handling, 
+and facilitating dependency injection.
+
+17.increased productivity through concise syntax, 
+safer code with reduced crash rates due to null 
+safety features, seamless interoperability 
+with existing Java codebases, 
+simplified asynchronous programming via coroutines
+
+18.using koin by inject it in 
+Dependencies into Components
+
+19.constructor injection is generally preferred over 
+field injection due to its advantages concerning immutability,
+explicitness in defining dependencies, 
+ease of testing, 
+reduced risks associated with null references, 
+and better alignment
+
+
+20.kotlin have the "lateinit" modifier 
+for deferred initialization without risking NPEs,
+and smart casts that enhance code clarity and safety.
+
