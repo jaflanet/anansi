@@ -1,22 +1,18 @@
 fun main() {
-    val guess = arrayOf(5, 3, 7, 0)
-    val correct = 7
-    var i = 0
+    val fuel = 0
+    var i = fuel
 
-    while (i < guess.size) {
-        val g = guess[i]
-        if (g == correct) {
-            print(g)
-            println(" correct")
-            break
-        } else if (g == 0) {
-            println("quit guessing")
+    while (i < 50) {
+        if (i > 40) {
             break
         } else {
-            print(g)
-            println(" pass")
+            print(i)
+            println(" fueling...")
         }
-        i++
+        i+=5
     }
+    print("stop ")
+    print(i)
+    println(" fuel exceed 40")
 }
 
