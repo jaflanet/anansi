@@ -200,4 +200,3 @@ fun main() {
     reserveSeat("Sarah", 2)
 }
 ```
-

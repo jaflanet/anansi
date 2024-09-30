@@ -1,18 +1,18 @@
-fun main() {
-    val fuel = 0
-    var i = fuel
 
-    while (i < 50) {
-        if (i > 40) {
-            break
-        } else {
-            print(i)
-            println(" fueling...")
-        }
-        i+=5
+val availableSeats = mutableListOf(1, 2, 3, 4, 5)
+
+fun reserveSeat(name: String, seatNumber: Int) {
+
+    if (seatNumber in availableSeats) {
+        availableSeats.remove(seatNumber) // Mark the seat as reserved by setting it to 0
+        println("$name reserved seat $seatNumber.")
+    } else {
+        println("Seat $seatNumber is already reserved.")
     }
-    print("stop ")
-    print(i)
-    println(" fuel exceed 40")
+}
+
+fun main() {
+    reserveSeat("John", 2)
+    reserveSeat("Sarah", 2)
 }
 

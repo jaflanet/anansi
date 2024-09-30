@@ -1,0 +1,112 @@
+1. A
+2. D
+3. C
+4. B
+5. C
+
+6. var value is dynamic and val is constant
+7. using list,listof, mutable
+8 if(x = 2){
+    print("hello")
+}
+else{
+    print("world")
+}
+
+9. using kotlin null safety feature
+
+10. built in function to simplified in writing code
+
+11. using class type with class name
+
+12. for ( var in list) loop through the var
+
+13. when is like switch case which each case can be modified 
+with if-else statement
+
+14. using modular "%" with 2 if its 0 its even number
+
+15. using array and arrayOf to write the value
+
+16. no, val cant be reasigned
+
+17. Kotlin allows you to provide custom implementations 
+for the predefined set of operators on types
+
+18. yes
+
+19. yes
+
+20. yes
+
+21. 
+
+var x = "Hello"
+x = "world"
+
+22. 
+ fun sum(a: Int, b: Int): Int {
+    return a + b
+ }
+    sum(5, 10)
+
+23
+ val myList = mutablelistOf(1, 2, 3)
+    myList.add(4)
+
+24.
+val name: String ? = null
+
+25.
+
+ if (x > 5) {
+        println("x is greater than 5")
+    }
+
+26.
+  when (x) {
+        1 -> println("One")
+        2 -> println("Two")
+        else -> println("Other")
+    }
+
+27. 
+fun greet(name: String) {
+        println("Hello, ${name}")
+    }
+
+28.
+val myVar=10
+val result = myVar+5
+
+
+29.
+ val numbers = arrayOf(1, 2, 3)
+    println(numbers[2])
+
+
+30.
+    class Person(val name: String, val age: Int) {
+        fun greet() {
+            print("Hello, my name is $name and I'm $age")
+        }
+    }
+
+31. 
+
+val availableSeats = mutableListOf(1, 2, 3, 4, 5)
+
+fun reserveSeat(name: String, seatNumber: Int) {
+
+    if (seatNumber in availableSeats) {
+        availableSeats.remove(seatNumber) // Mark the seat as reserved by setting it to 0
+        println("$name reserved seat $seatNumber.")
+    } else {
+        println("Seat $seatNumber is already reserved.")
+    }
+}
+
+fun main() {
+    reserveSeat("John", 2)
+    reserveSeat("Sarah", 2)
+}
