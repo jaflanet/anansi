@@ -1,24 +1,28 @@
 #### **Optional (Choose the correct answer):**
 
 1. Which of the following creates an immutable list in Kotlin?
+
    - a) `arrayOf(1, 2, 3)`
    - b) `listOf(1, 2, 3)`
    - c) `mutableListOf(1, 2, 3)`
    - d) `setOf(1, 2, 3)`
 
 2. What is the purpose of a coroutine in Kotlin?
+
    - a) To manage multiple threads
    - b) To handle asynchronous programming efficiently
    - c) To suspend functions indefinitely
    - d) To manage Android lifecycle events
 
 3. Which activity lifecycle method is called when the activity is visible but not yet interactive?
+
    - a) `onCreate()`
    - b) `onResume()`
    - c) `onStart()`
    - d) `onPause()`
 
 4. In Android UI, which ViewGroup arranges its children in a single direction (either horizontal or vertical)?
+
    - a) `RelativeLayout`
    - b) `ConstraintLayout`
    - c) `LinearLayout`
@@ -36,14 +40,11 @@
 
 6. What is the difference between `listOf()` and `mutableListOf()` in Kotlin?
 
-
 7. How does `onDestroy()` differ from `onStop()` in the Android activity lifecycle?
-
 
 8. What is the advantage of using coroutines over threads in Kotlin?
 
 9. How can you prevent memory leaks in Android when handling configuration changes like screen rotation?
-
 
 10. Explain the difference between `View` and `ViewGroup` in Android.
 
@@ -80,6 +81,7 @@
     val myList = listOf(1, 2, 3)
     myList.add(4)
     ```
+
 ---
 
 22. **Incorrect code:**
@@ -107,6 +109,7 @@
     val map = mapOf(1 to "One", 2 to "Two")
     map[3] = "Three"
     ```
+
 ---
 
 25. **Incorrect code:**
@@ -122,13 +125,14 @@
 ### **Story-based Question (with Failed Code)**
 
 #### **Story:**
+
 You are developing an Android app for managing tasks. Each task has a title and a description. The app should allow users to add tasks and display the list of tasks in a `RecyclerView`. However, the app crashes when you try to display the list of tasks.
 
 Here’s the failed code:
 
 ```kotlin
 class TaskAdapter(private val taskList: List<Task>) : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
-    
+
     class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
@@ -148,6 +152,4 @@ class TaskAdapter(private val taskList: List<Task>) : RecyclerView.Adapter<TaskA
 data class Task(val title: String, val description: String)
 ```
 
-
 ---
-

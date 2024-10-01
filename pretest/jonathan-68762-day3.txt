@@ -1,0 +1,79 @@
+1. B 
+2. B
+3. D
+4. C
+5. C
+
+6. list of is immutable , 
+mutableListOf is mutable (value inside can be changed)
+7.
+`onDestroy()` is called when the activity is destroyed, 
+while `onStop()` is called when  the activity is 
+stopped but not yet destroyed.
+
+8.coroutines are more efficient and easier to use
+
+9. to prevent memory leaks in android 
+when handling configuration changes like screen rotaion, 
+we can Leverage the ViewModel component from the Android Architecture Components. ViewModel survives configuration changes, allowing you to store 
+UI-related data without leaking the Activity or Fragment.
+
+10. 
+View: A View is the basic building block of UI in Android. 
+It represents a single UI element (like a button, text field, or image) 
+and is responsible for drawing and event handling.
+ViewGroup: A ViewGroup is a special type of View 
+that can contain other View or ViewGroup instances.
+It acts as a container for organizing child views,
+such as layouts like LinearLayout, 
+RelativeLayout, or ConstraintLayout.
+ 
+11. 
+RecyclerView works seamlessly 
+with the Adapter to bind data and can
+handle different types of views in a single list,
+while ListView is more limited
+
+12.
+The onResume() method is called when the activity becomes
+ visible and interactive to the user.
+
+13.
+used to start a new coroutine
+
+14. 
+is a lifecycle-aware data holder class in Android that allows you to observe changes to data. 
+It is useful because it automatically manages 
+subscriptions based on the lifecycle state of UI components
+
+15.
+part of Android's Architecture Components 
+and is designed to 
+store and manage UI-related data in a 
+lifecycle-conscious way
+
+16. No 
+17. Yes 
+18. No 
+19. Yes 
+20. Yes 
+
+21. 
+ val myList = mutableListOf(1, 2, 3)
+myList.add(4)
+
+22. 
+suspend fun myCoroutine() {
+    delay(1000L)
+    println("Coroutine executed")
+}
+
+23. ga tau 🙄
+
+24. 
+ val map = mutableMapOf(1 to "One", 2 to "Two")
+map[3] = "Three"
+
+25. ga tau 🙄
+
+26. ga tau 🙄
