@@ -1,0 +1,13 @@
+1.b.
+2.a.
+3.b.
+4.b.
+5.d.
+
+1.false
+2.false
+3.true
+4.false
+5.true
+
+1.
