@@ -1,0 +1,46 @@
+1. d.
+2. b.
+3. a.
+4. c.
+5. b.
+
+1. False
+2. True
+3. False
+4. True
+5. False
+
+1. onPause()  is called when the activity is paused,  which means 
+it is no longer visible to the user but 
+it is still running in the background.
+onStop() will close the activity and will not consume the cpu
+
+2.to pass data using intent  we use putExtra() method of intent class
+
+3. onSaveInstanceState() when handling screen rotations , the system 
+calls onSaveInstanceState() to save the current state of the activity so 
+when the screen rotate the activity can restore its state 
+from the saved state.
+
+4.onPause -> onStop -> onDestroy
+
+5. Use startActivityForResult() to launch the new activity.
+In the new activity, set the result using setResult() and finish the activity.
+Handle the result in onActivityResult() in the original activity.
+
+
+1.
+val intent = Intent(this, MainActivity::class.java)
+startActivity(intent)
+
+the code is work but it will not save the value to parse data
+
+2.
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState) 
+    setContentView(R.layout.activity_main)
+}
+
+3. override fun onDestroy() {
+    super.onDestroy()
+}
