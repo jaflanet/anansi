@@ -1,0 +1,45 @@
+1. a.
+2. b.
+3. b.
+4. b.
+5. b.
+
+1. true
+2. true
+3. false
+4. true
+5. true
+
+1. to display a list of data using the same template
+2. using button component
+3. constraint layout is more flexible than linear layout
+4. using progressbar
+5. set the value to true
+
+1. 
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/sample_image" />
+
+2. 
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Press Me" />
+remove the onclick because the function should be put
+in the java kotlin class
+
+3. 
+<RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+change the width to match_parent because it will
+match the parent width
+
+1. 
+
