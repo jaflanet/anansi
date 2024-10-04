@@ -10,4 +10,43 @@
 4.false
 5.true
 
+1.apply(): Saves changes to Shared Preferences asynchronously, 
+meaning it doesn't block the main thread
+commit(): Saves changes synchronously and returns 
+a boolean indicating success or failure.
+
+2.
+SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+SharedPreferences.Editor editor = sharedPreferences.edit();
+editor.putBoolean("isLoggedIn", true);
+editor.apply(); 
+
+3.
+SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false); 
+
+4. 
+Used for storing small amounts of simple data, such as user settings, preferences, or state information.
+Data is stored as key-value pairs and persists across app sessions.
+Key Points:
+
+5.
+you can modify Shared Preferences from multiple threads, 
+it’s important to note that using apply() is 
+generally safe as it handles changes asynchronously
+
+
 1.
+val sharedPref = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+val editor = sharedPref.edit()
+editor.putString("username", "JohnDoe")
+editor.apply()
+
+2.
+val sharedPref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+val username = sharedPref.getString("username", "defaultName")
+
+3.
+val editor = sharedPref.edit()
+editor.remove("key") 
+editor.apply()
