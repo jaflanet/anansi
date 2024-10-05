@@ -1,0 +1,55 @@
+1.b.
+2.b.
+3.b.
+4.e.
+5.a.
+
+1. true
+2. false
+3. true
+4. false
+5. false
+
+1. GsonConverterFactory 
+is used to convert JSON responses
+
+2. use the enqueue() method on the Call 
+object to handle the response asynchronously
+
+3.Synchronous calls block the executing thread 
+until the response is received, 
+while asynchronous calls do not block and 
+allow the application to continue running,
+
+4.use the @Query annotation then Call<List<User>>
+
+5. using onResponse then handle the error base 
+on response code
+
+1. 
+interface ApiService {
+    @GET("users")
+    fun getUsers(): Call<List<User>>
+}
+
+val apiService = retrofit.create(ApiService::class.java)
+val call = apiService.getUsers()
+
+2.
+interface ApiService {
+    @POST("login")
+    fun loginUser(@Body credentials: Map<String, String>): Call<LoginResponse>
+}
+
+val apiService = retrofit.create(ApiService::class.java)
+val credentials = mapOf("username" to "yourUsername", "password" to "yourPassword")
+val call = apiService.loginUser(credentials)
+
+3. 
+interface ApiService {
+    @GET("user/{id}")
+    fun getUserById(@Path("id") userId: Int): Call<User>
+}
+val id = <id yang dimau>
+val apiService = retrofit.create(ApiService::class.java)
+val call = apiService.getUserById(id)
