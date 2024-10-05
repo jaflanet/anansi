@@ -1,0 +1,45 @@
+1.C
+2. C
+3. A
+4. B
+5. B
+
+1. false
+2. false
+3. true
+4. true
+5. false
+
+1. MediaPlayer is a class used to play audio 
+and video files in Android applications
+
+2.instantiate a VideoView, 
+set the video URI using setVideoURI() 
+or setVideoPath(), 
+and then call start() to play the video
+
+3.create an Intent with Intent.ACTION_IMAGE_CAPTURE
+, start the activity with startActivityForResult(), 
+and handle the result in onActivityResult()
+
+4. RECORD_AUDIO permission in the AndroidManifest
+
+5
+MediaPlayer.create(context, R.raw.audio_file_name) 
+and then call start()
+
+
+1.
+val mediaPlayer = MediaPlayer()
+mediaPlayer.setDataSource(context, Uri.parse("android.resource://audio"))
+mediaPlayer.prepare()
+mediaPlayer.start()
+
+2.
+val videoView: VideoView = findViewById(R.id.videoView)
+videoView.setVideoPath("directory/video.mp4")
+videoView.start()
+
+3.
+val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+startActivityForResult(intent, 1)
